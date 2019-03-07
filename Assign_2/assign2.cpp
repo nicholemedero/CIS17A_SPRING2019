@@ -23,9 +23,9 @@
  */
 
 
-#include <iostream>
-#include <cmath>
-#include <iomanip>
+#include <iostream> //- cout and cin
+#include <cmath>    //- ceil()
+#include <iomanip>  //- output format
 
 using namespace std;
 
