@@ -14,7 +14,7 @@ private:
     int monthlyServiceCharges;
     virtual void deposit(int,int);
     virtual void withdrawal(int,int);
-    virtual int monthlyProc(int,int);
+    virtual void monthlyProc(int,int);
 };
 
 #endif /* GENERICACCOUNT_H */
