@@ -6,15 +6,15 @@ public:
     genericAccount();
     genericAccount(const genericAccount& orig);
     virtual ~genericAccount();
+private:
     int accountBalance;
     int accountNumber;
     int totalMonthlyDeposits;
     int totalWithdrawals;
     int monthlyServiceCharges;
-    virtual int deposit(int);
-    virtual int withdrawal(int);
-private:
-
+    virtual void deposit(int,int);
+    virtual void withdrawal(int,int);
+    virtual int monthlyProc(int,int);
 };
 
 #endif /* GENERICACCOUNT_H */

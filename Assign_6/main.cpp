@@ -1,5 +1,8 @@
 #include <cstdlib>
 #include <iostream>
+#include "checkingAccount.h"
+#include "genericAccount.h"
+#include "savingsAccount.h"
 
 using namespace std;
 

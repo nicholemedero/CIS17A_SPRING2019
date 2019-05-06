@@ -7,7 +7,7 @@ public:
     checkingAccount(const checkingAccount& orig);
     virtual ~checkingAccount();
 private:
-
+    using genericAccount::genericAccount;
 };
 
 #endif /* CHECKINGACCOUNT_H */

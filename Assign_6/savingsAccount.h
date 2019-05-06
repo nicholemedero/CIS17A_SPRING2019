@@ -6,9 +6,8 @@ public:
     savingsAccount();
     savingsAccount(const savingsAccount& orig);
     virtual ~savingsAccount();
-    bool status;
 private:
-
+    using genericAccount::genericAccount;
 };
 
 #endif /* SAVINGSACCOUNT_H */
