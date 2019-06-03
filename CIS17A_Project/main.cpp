@@ -127,8 +127,8 @@ void plants() {
     
     //FILE INPUT OUTPUT
     fstream dataFile;
-    cout<<"Inside data.txt.\n";
-    dataFile.open("data.txt", ios::out | ios::binary);
+    cout<<"Inside data.dat.\n";
+    dataFile.open("data.dat", ios::out | ios::binary);
         dataFile << "\t Angiosperms:" << endl;
         dataFile << "Name: " << plant1.getName() << endl;
         dataFile << "Family: " << plant1.getFamily() << endl;
@@ -142,7 +142,7 @@ void plants() {
         dataFile << "Origin: " << plant1.getOrigin() << endl;
     dataFile.close();
     
-    dataFile.open("data.txt", ios::out | ios::app | ios::binary);
+    dataFile.open("data.dat", ios::out | ios::app | ios::binary);
         dataFile << "Name: " << plant2.getName() << endl;
         dataFile << "Family: " << plant2.getFamily() << endl;
         dataFile << "Plant Type: " << plant2.getPlantType() << endl;
