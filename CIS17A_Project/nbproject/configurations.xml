@@ -19,7 +19,6 @@
                    projectFiles="true">
       <itemPath>Angiosperms.cpp</itemPath>
       <itemPath>Family.cpp</itemPath>
-      <itemPath>Genus.cpp</itemPath>
       <itemPath>Gymnosperms.cpp</itemPath>
       <itemPath>Plants.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -49,6 +48,7 @@
           <linkerDynSerch>
             <pElem>.</pElem>
             <pElem>.</pElem>
+            <pElem>.</pElem>
           </linkerDynSerch>
         </linkerTool>
       </compileType>
@@ -59,8 +59,6 @@
       <item path="Family.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Family.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Genus.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Genus.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -75,6 +73,7 @@
       <folder path="TestFiles">
         <linkerTool>
           <linkerDynSerch>
+            <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>
           </linkerDynSerch>
@@ -106,6 +105,7 @@
           <linkerDynSerch>
             <pElem>.</pElem>
             <pElem>.</pElem>
+            <pElem>.</pElem>
           </linkerDynSerch>
         </linkerTool>
       </compileType>
@@ -116,8 +116,6 @@
       <item path="Family.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Family.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Genus.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Genus.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -132,6 +130,7 @@
       <folder path="TestFiles">
         <linkerTool>
           <linkerDynSerch>
+            <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>
           </linkerDynSerch>

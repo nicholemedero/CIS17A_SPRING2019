@@ -37,7 +37,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Angiosperms.o \
 	${OBJECTDIR}/Family.o \
-	${OBJECTDIR}/Genus.o \
 	${OBJECTDIR}/Gymnosperms.o \
 	${OBJECTDIR}/Plants.o \
 	${OBJECTDIR}/main.o
@@ -76,11 +75,6 @@ ${OBJECTDIR}/Family.o: Family.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Family.o Family.cpp
-
-${OBJECTDIR}/Genus.o: Genus.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Genus.o Genus.cpp
 
 ${OBJECTDIR}/Gymnosperms.o: Gymnosperms.cpp
 	${MKDIR} -p ${OBJECTDIR}

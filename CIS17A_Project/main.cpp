@@ -76,7 +76,7 @@ void plants() {
     Family plant1;
     Family plant2;
     Family plant3;
-    Genus plant4;
+    Genus<int> plant4;
     
     plant1.setName("Corn");
     plant1.setFamily("Poaceae");
