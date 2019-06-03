@@ -140,7 +140,8 @@ void plants() {
         dataFile << "Sepals: " << plant1.getSepals() << endl;
         dataFile << "Origin: " << plant1.getOrigin() << endl;
     dataFile.close();
-    
+    cout<<"Closing data.dat"<<endl;
+    cout<<"Opening data.dat"<<endl;
     dataFile.open("data.dat", ios::out | ios::app | ios::binary);
         dataFile << "Name: " << plant2.getName() << endl;
         dataFile << "Family: " << plant2.getFamily() << endl;
@@ -176,6 +177,7 @@ void plants() {
         dataFile << "Average Weight: " << plant4.getAvgWeight() << endl;
         dataFile << "Origin: " << plant4.getOrigin() << endl;
         dataFile.close();
-        
+        cout<<"Exiting data.dat"<<endl;
+        cout<<"Program end."<<endl;
 }
 

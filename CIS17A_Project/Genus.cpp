@@ -1,6 +1,6 @@
 #include "Genus.h"
 
-string Plants::getName() const {
+string Genus::getName() const {
     return name;
 }
 

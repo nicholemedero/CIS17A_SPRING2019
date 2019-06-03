@@ -11,8 +11,9 @@ public:
     void setName(string);
     void setPlantType(string);
 private:
-    string name;
     string plantType;
+protected:
+    string name;
 
 };
 

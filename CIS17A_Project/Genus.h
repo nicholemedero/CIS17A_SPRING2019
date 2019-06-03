@@ -6,6 +6,7 @@
 #include <string>
 using namespace std;
 
+template <class T>
 class Genus : public Gymnosperms {
 public:
     string getName() const; //virtual function from base class
