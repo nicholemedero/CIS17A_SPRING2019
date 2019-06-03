@@ -1,41 +1,10 @@
-	 Angiosperms:
-Name: Corn
-Family: Poaceae
-Plant Type: Angiosperm
-Seed:
-Cotyledon: Monocot
-Fruit: 1
-Dichogamy: 
-Petals: 0
-Sepals: 3
-Origin: 
-Name: Alfalfa
-Family: Lauraceae
-Plant Type: Angiosperm
-Seed:
-Cotyledon: Dicot
-Fruit: 1
-Dichogamy: 
-Petals: 5
-Sepals: 5
-Origin: 
-Name: Radish
-Family: Brassicaceae
-Plant Type: Angiosperm
-Seed:
-Cotyledon: Dicot
-Fruit: 1
-Dichogamy: 
-Petals: 4
-Sepals: 4
-Origin: 
 
 	 Gymnosperms:
 Name: Pine Nut
 Family: Pinaceae
 Genus: Pinus
 Species: Koraiensis
-Seed: x
+Seed: 120
 Sepals: 0
 Petals: 0
 Plant Type: Gymnosperm

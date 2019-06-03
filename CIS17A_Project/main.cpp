@@ -27,7 +27,6 @@ int main(int argc, char** argv) {
 void menu() {
     int choice;
     cout<<"This program provides detailed information on plant hierarchies."<<endl;
-    cout<<"Enter the proper integer to navigate the program.";
     cout<<"\t **MAIN MENU**"<<endl;
     cout<<"Please select a number to navigate through the program's menu."<<endl;
     cout<<"1 \t Plant Characteristic Definitions"<<endl;
@@ -42,9 +41,9 @@ void menu() {
             case 1: 
                 definitions();break;
             case 2: 
-                aboutProg();break;
-            case 3: 
                 plants();break;
+            case 3: 
+                aboutProg();break;
             }   
         }  
     
@@ -93,7 +92,7 @@ void plants() {
     plant2.setName("Alfalfa");
     plant2.setFamily("Lauraceae");
     plant2.setPlantType("Angiosperm");
-    plant2.setSeed(2);
+    plant2.setSeed(1);
     plant2.setCotyledon("Dicot");
     plant2.setFruit(true);
     plant2.setDichogamy("Perfect");
@@ -123,53 +122,66 @@ void plants() {
     plant4.setAvgWeight(90);
     plant4.setOrigin("Korea");
             
-    
+    //Validation
+        cout << "\t Angiosperms:" << endl;
+        cout << "Name: " << plant1.getName() << endl;
+        cout << "Family: " << plant1.getFamily() << endl;
+        cout << "Plant Type: " << plant1.getPlantType() << endl;
+        cout << "Seed: " << plant1.getSeed() << endl;
+        cout << "Cotyledon: " << plant1.getCotyledon() << endl;
+        cout << "Fruit: " << plant1.getFruit() << endl;
+        cout << "Dichogamy: " << plant1.getDichogamy() << endl;
+        cout << "Petals: " << plant1.getPetals() << endl;
+        cout << "Sepals: " << plant1.getSepals() << endl;
+        cout << "Origin: " << plant1.getOrigin() << endl;
+        cout<<"----------------"<<endl;
+        cout << "Name: " << plant2.getName() << endl;
+        cout << "Family: " << plant2.getFamily() << endl;
+        cout << "Plant Type: " << plant2.getPlantType() << endl;
+        cout << "Seed: " << plant2.getSeed() << endl;
+        cout << "Cotyledon: " << plant2.getCotyledon() << endl;
+        cout << "Fruit: " << plant2.getFruit() << endl;
+        cout << "Dichogamy: " << plant2.getDichogamy() << endl;
+        cout << "Petals: " << plant2.getPetals() << endl;
+        cout << "Sepals: " << plant2.getSepals() << endl;
+        cout << "Origin: " << plant2.getOrigin() << endl;
+        cout<<"----------------"<<endl;
+        cout << "Name: " << plant3.getName() << endl;
+        cout << "Family: " << plant3.getFamily() << endl;
+        cout << "Plant Type: " << plant3.getPlantType() << endl;
+        cout << "Seed: " << plant3.getSeed() << endl;
+        cout << "Cotyledon: " << plant3.getCotyledon() << endl;
+        cout << "Fruit: " << plant3.getFruit() << endl;
+        cout << "Dichogamy: " << plant3.getDichogamy() << endl;
+        cout << "Petals: " << plant3.getPetals() << endl;
+        cout << "Sepals: " << plant3.getSepals() << endl;
+        cout << "Origin: " << plant3.getOrigin() << endl;
+        cout<<"----------------"<<endl;
+        cout << "\t Gymnosperms:" << endl;
+        cout << "Name: " <<  plant4.getName() << endl;
+        cout << "Family: " << plant4.getFamily() << endl;
+        cout << "Genus: " << plant4.getGenus() << endl;
+        cout << "Species: " << plant4.getSpecies() << endl;
+        cout << "Seed: " << plant4.getSeed() << endl;
+        cout << "Sepals: " << plant4.getSepals() << endl;
+        cout << "Petals: " << plant4.getPetals() << endl;
+        cout << "Plant Type: " << plant4.getPlantType() << endl;
+        cout << "Average Weight: " << plant4.getAvgWeight() << endl;
+        cout << "Origin: " << plant4.getOrigin() << endl;
+        cout<<"----------------"<<endl;
     //FILE INPUT OUTPUT
     fstream dataFile;
     cout<<"Inside data.dat.\n";
     dataFile.open("data.dat", ios::out | ios::binary);
-        dataFile << "\t Angiosperms:" << endl;
-        dataFile << "Name: " << plant1.getName() << endl;
-        dataFile << "Family: " << plant1.getFamily() << endl;
-        dataFile << "Plant Type: " << plant1.getPlantType() << endl;
-        dataFile << "Seed:" << plant1.getSeed() << endl;
-        dataFile << "Cotyledon: " << plant1.getCotyledon() << endl;
-        dataFile << "Fruit: " << plant1.getFruit() << endl;
-        dataFile << "Dichogamy: " << plant1.getDichogamy() << endl;
-        dataFile << "Petals: " << plant1.getPetals() << endl;
-        dataFile << "Sepals: " << plant1.getSepals() << endl;
-        dataFile << "Origin: " << plant1.getOrigin() << endl;
-    dataFile.close();
-    cout<<"Closing data.dat"<<endl;
-    cout<<"Opening data.dat"<<endl;
-    dataFile.open("data.dat", ios::out | ios::app | ios::binary);
-        dataFile << "Name: " << plant2.getName() << endl;
-        dataFile << "Family: " << plant2.getFamily() << endl;
-        dataFile << "Plant Type: " << plant2.getPlantType() << endl;
-        dataFile << "Seed:" << plant2.getSeed() << endl;
-        dataFile << "Cotyledon: " << plant2.getCotyledon() << endl;
-        dataFile << "Fruit: " << plant2.getFruit() << endl;
-        dataFile << "Dichogamy: " << plant2.getDichogamy() << endl;
-        dataFile << "Petals: " << plant2.getPetals() << endl;
-        dataFile << "Sepals: " << plant2.getSepals() << endl;
-        dataFile << "Origin: " << plant2.getOrigin() << endl;
-        
-        dataFile << "Name: " << plant3.getName() << endl;
-        dataFile << "Family: " << plant3.getFamily() << endl;
-        dataFile << "Plant Type: " << plant3.getPlantType() << endl;
-        dataFile << "Seed:" << plant3.getSeed() << endl;
-        dataFile << "Cotyledon: " << plant3.getCotyledon() << endl;
-        dataFile << "Fruit: " << plant3.getFruit() << endl;
-        dataFile << "Dichogamy: " << plant3.getDichogamy() << endl;
-        dataFile << "Petals: " << plant3.getPetals() << endl;
-        dataFile << "Sepals: " << plant3.getSepals() << endl;
-        dataFile << "Origin: " << plant3.getOrigin() << endl;
-        
         dataFile << endl << "\t Gymnosperms:" << endl;
         dataFile << "Name: " <<  plant4.getName() << endl;
         dataFile << "Family: " << plant4.getFamily() << endl;
         dataFile << "Genus: " << plant4.getGenus() << endl;
         dataFile << "Species: " << plant4.getSpecies() << endl;
+    dataFile.close();
+    cout<<"Closing data.dat"<<endl;
+    cout<<"Opening data.dat"<<endl;
+    dataFile.open("data.dat", ios::out | ios::app | ios::binary);
         dataFile << "Seed: " << plant4.getSeed() << endl;
         dataFile << "Sepals: " << plant4.getSepals() << endl;
         dataFile << "Petals: " << plant4.getPetals() << endl;

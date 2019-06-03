@@ -4,7 +4,7 @@ string Gymnosperms::getFamily() const {
     return family;
 }
 
-string Gymnosperms::getSeed() const {
+int Gymnosperms::getSeed() const {
     return seed;
 }
 

@@ -24,10 +24,10 @@ void Family::setCotyledon(string cotyledon_) {
     cotyledon = cotyledon_;
 }
 
-void Family::setDichogamy(string) {
+void Family::setDichogamy(string dichogamy) {
     this->dichogamy = dichogamy;
 }
 
-void Family::setOrigin(string) {
+void Family::setOrigin(string origin) {
     this->origin = origin;
 }

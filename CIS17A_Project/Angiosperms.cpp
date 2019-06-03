@@ -4,7 +4,7 @@ string Angiosperms::getFamily() const {
     return family;
 }
 
-string Angiosperms::getSeed() const {
+int Angiosperms::getSeed() const {
     return seed;
 }
 
