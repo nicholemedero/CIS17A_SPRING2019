@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/CIS17A_Project/build/
+/CIS17A_Project/dist/

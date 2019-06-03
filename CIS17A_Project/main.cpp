@@ -1,7 +1,6 @@
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
-#include <iomanip>
 
 #include "Plants.h" //*base class & template class
 #include "Angiosperms.h" //*derived class of plants class
@@ -177,7 +176,6 @@ void plants() {
         dataFile << "Average Weight: " << plant4.getAvgWeight() << endl;
         dataFile << "Origin: " << plant4.getOrigin() << endl;
         dataFile.close();
-        
         
 }
 
